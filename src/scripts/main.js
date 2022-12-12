@@ -149,16 +149,11 @@ $(function() {
   });
 
   $('.switch-btn').on('on.switch', function() {
-    if (on.switch) {
-      document.header.setAttribute('dark', '');
-    } else {
-      document.removeAttribute('dark');
-    }
-    console.log('on');
+    console.log('btn on');
   });
 
   $('.switch-btn').on('off.switch', function() {
-    console.log('off');
+    console.log('btn off');
   });
 
   $('.switch-btn').each(function() {
