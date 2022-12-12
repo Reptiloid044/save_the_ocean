@@ -1,6 +1,5 @@
 .header {
-
-  background-color: var(--var-body-bg);
+  background-color: var(--bg-color);
 
   &__content {
     display: flex;
@@ -18,7 +17,7 @@
   &__logo-content {
     text-transform: uppercase;
     text-decoration: none;
-    color: $c-black;
+    color: var(--color);
     font-size: 20px;
     line-height: 21px;
     @extend %Syncopate400;
@@ -45,7 +44,7 @@
 
   &__phone {
     text-decoration: none;
-    color: $c-black;
+    color: var(--color);
     @extend %Syncopate400;
     display: block;
     font-size: 16px;
@@ -64,29 +63,11 @@
 
     @include onTablet {
       display: block;
-      background-image: url(../images/icon/Rectangle362.svg);
-      background-size: cover;
-      position: relative;
-      width: 48px;
-      height: 32px;
-      transition: 0.3s;
-      justify-self: end;
-    }
-
-    &-button {
-      background-image: url(../images/icon/togglerLight.svg);
-      background-size: cover;
-      position: absolute;
-      width: 35px;
-      height: 37px;
-      left: -5px;
-      cursor: pointer;
-      transition: background-image 0.3s, left 0.3s;
     }
   }
 
   &__menu {
-    background-image: url(../images/icon/menu.svg);
+    background-image: var(--bg-imageMenu);
     width: 40px;
     height: 40px;
     background-size: cover;

@@ -1,12 +1,13 @@
 .footer {
   position: relative;
-  margin-top: 120px;
   background-color: $c-black;
   border-bottom: 57px solid #1A1A1A;
 
-  &__logo {
-    padding-top: 40px;
+  &__content {
+    padding-top: 120px;
+  }
 
+  &__logo {
     &-content {
       color: $c-white !important;
       text-transform: uppercase;
@@ -40,10 +41,10 @@
       line-height: 25px;
     }
 
-   @include onLaptop {
-    font-size: 36px;
-    line-height: 37px;
-   }
+    @include onLaptop {
+      font-size: 36px;
+      line-height: 37px;
+    }
   }
 
   &__social {

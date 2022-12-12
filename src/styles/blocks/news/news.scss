@@ -1,5 +1,6 @@
 .news {
   &__title {
+    color: var(--color);
     @extend %Syncopate700;
     font-size: 24px;
     line-height: 25px;
@@ -22,7 +23,7 @@
   }
 
   &__card-wrap {
-    border: 1px solid $c-black;
+    border: 1px solid var(--color);
     transition: box-shadow 0.3s, border 0.3s, background-color 0.3s;
 
     @include onLaptop {
@@ -33,22 +34,11 @@
     }
   }
 
-  // &__card-wrap.active {
-  //   background-color: #272727;
-  //   border: 1px solid white;
-
-  //   &:hover {
-  //     box-shadow: -5px 5px $c-blue,
-  //     -5px 5px 0px 1px white;
-  //   }
-  // }
-
   &__slider-progressBar {
     display: block;
-    // position: relative;
     height: 16px;
     background-color: #EFEFEF;
-    background-image: linear-gradient(to right, $c-black, $c-black);
+    background-image: linear-gradient(to right, var(--slider-color), var(--slider-color));
     background-repeat: no-repeat;
     background-size: 0 100%;
     transition: background-size .4s ease-in-out, background-color 0.3s, background-image 0.3s;
@@ -57,11 +47,6 @@
       display: none;
     }
   }
-
-  // &__slider-progressBar.active {
-  //   background-color: #413b3b;
-  //   background-image: linear-gradient(to right, $c-white, $c-white);
-  // }
 
   &__card-img-wrap {
     height: 167px;
@@ -104,7 +89,7 @@
     font-size: 16px;
     line-height: 20px;
     @extend %Syncopate400Bold;
-    color: $c-black;
+    color: var(--color);
     text-transform: uppercase;
     transition: color 0.3s;
 
@@ -119,15 +104,11 @@
     }
   }
 
-  // &__card-title.active {
-  //   color: white;
-  // }
-
   &__card-text {
     font-size: 16px;
     line-height: 24px;
     font-family: $KyivType;
-    color: $c-black;
+    color: var(--color);
     transition: color 0.3s;
 
     @include onTablet {
@@ -140,10 +121,6 @@
       line-height: 24px;
     }
   }
-
-  // &__card-text.active {
-  //   color: white;
-  // }
 
   &__line {
     height: 1px;

@@ -13,6 +13,7 @@ const joinTheTeam = document.querySelector('.menu__link-join');
 
 openMenu.addEventListener('click', addBlur);
 closeMenu.addEventListener('click', removeBlur);
+
 aboutUs.addEventListener('click', removeBlur);
 ourProjects.addEventListener('click', removeBlur);
 stories.addEventListener('click', removeBlur);
@@ -149,10 +150,12 @@ $(function() {
   });
 
   $('.switch-btn').on('on.switch', function() {
+    document.documentElement.classList.add('dark');
     console.log('btn on');
   });
 
   $('.switch-btn').on('off.switch', function() {
+    document.documentElement.classList.add('light');
     console.log('btn off');
   });
 

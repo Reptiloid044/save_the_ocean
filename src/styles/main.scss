@@ -9,12 +9,11 @@
 @import './blocks/header/header.scss';
 @import './blocks/page/page.scss';
 @import './blocks/menu/menu.scss';
-@import './blocks/main/main.scss';
 @import './blocks/about/about.scss';
 @import './blocks/slider/slider.scss';
 @import './blocks/news/news.scss';
 @import './blocks/subscribe/subscribe.scss';
 @import './blocks/footer/footer.scss';
 @import './blocks/toggler/toggler.scss';
-@import './blocks/dark/dark.scss';
-
+@import './utils/dark/dark.scss';
+@import './utils/light/light.scss';

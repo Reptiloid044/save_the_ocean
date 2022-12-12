@@ -1,0 +1,11 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: white;
+    --color: black;
+    --bg-imageMenu: url(../images/icon/menu.svg);
+    --slider-color: rgb(0, 0, 0);
+    --button-sub: black;
+    --bg-imageAbout: url(../images/icon/ABOUTTHE.svg);
+    --bg-imageProject: url(../images/icon/PROJECT.svg);
+  }
+}

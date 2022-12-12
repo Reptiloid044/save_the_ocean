@@ -39,6 +39,16 @@
   }
 }
 
+.main {
+  padding-top: 10px;
+
+  @include onLaptop {
+    padding-top: 32px;
+
+  }
+  background-color: var(--bg-color);
+}
+
 .filter {
   filter:blur(5px);
 }
