@@ -6,8 +6,17 @@ const header = document.querySelector('header');
 const main = document.querySelector('main');
 const footer = document.querySelector('.footer');
 
+const aboutUs = document.querySelector('.menu__link-about');
+const ourProjects = document.querySelector('.menu__link-project');
+const stories = document.querySelector('.menu__link-stories');
+const joinTheTeam = document.querySelector('.menu__link-join');
+
 openMenu.addEventListener('click', addBlur);
 closeMenu.addEventListener('click', removeBlur);
+aboutUs.addEventListener('click', removeBlur);
+ourProjects.addEventListener('click', removeBlur);
+stories.addEventListener('click', removeBlur);
+joinTheTeam.addEventListener('click', removeBlur);
 
 function addBlur() {
   header.classList.add('filter');
