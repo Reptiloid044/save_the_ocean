@@ -1,0 +1,109 @@
+.about {
+  height: fit-content;
+
+  &__title {
+    &-about {
+      height: 34px;
+
+      @include onTablet {
+        height: 74px;
+      }
+
+      @include onLaptop {
+        height: 24px;
+      }
+
+      @include onLaptopL {
+        height: 32px;
+      }
+
+      @include onDesktop {
+        height: 42px;
+      }
+    }
+
+    &-project {
+      height: 50px;
+
+      @include onTablet {
+        height: 106px;
+      }
+
+      @include onLaptop {
+        height: 34px;
+      }
+
+      @include onLaptopL {
+        height: 44px;
+      }
+
+      @include onDesktop {
+        height: 60px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include onLaptop {
+      height: 80%;
+    }
+
+    &-title {
+      @extend %Syncopate400Bold;
+      font-size: 14px;
+      line-height: 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: color 0.3s;
+
+      @include onLaptopL {
+        font-size: 16px;
+      }
+    }
+
+    // &-title.active {
+    //   color: white;
+
+    //   &:hover {
+    //     color: $c-blue;
+    //   }
+    // }
+
+    &-text {
+      margin-top: 10px;
+      font-family: $KyivType;
+      font-weight: 0;
+      font-size: 14px;
+      line-height: 22px;
+
+      @include onLaptopL {
+        font-size: 16px;
+      }
+    }
+
+    &-bottom {
+      bottom: 0;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+.about__line {
+  height: 1px;
+  width: 100%;
+  background-color: $c-black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  transition: background-color 0.3s;
+}
+

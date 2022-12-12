@@ -1,0 +1,49 @@
+.switch-btn {
+  display: inline-block;
+  width: 48px;
+  height: 32px;
+  border-radius: 19px;
+  background: #5c5b5b;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 300ms;
+
+    @include onDesktop {
+    width: 72px;
+    height: 36px;
+  }
+}
+
+.switch-btn::after {
+  content: url(../images/icon/togglerLight.svg);
+  width: 32px;
+  height: 32px;
+  border-radius: 17px;
+  top: 0;
+  right: 26px;
+  transition-duration: 500ms;
+  position: absolute;
+  z-index: 1;
+
+  @include onDesktop {
+    width: 52px;
+    height: 52px;
+  }
+
+}
+
+.switch-on {
+  background: #bbbbbb;
+}
+
+.switch-on::after {
+  left: 17px;
+
+  @include onDesktop {
+    left: 32px;
+  }
+}

@@ -1,0 +1,174 @@
+.footer {
+  position: relative;
+  margin-top: 120px;
+  background-color: $c-black;
+  border-bottom: 57px solid #1A1A1A;
+
+  &__logo {
+    padding-top: 40px;
+
+    &-content {
+      color: $c-white !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $c-black;
+      font-size: 24px;
+      line-height: 25px;
+      @extend %Syncopate400;
+
+      @include onTablet {
+        font-size: 36px;
+        line-height: 37px;
+      }
+
+      &--blue {
+        color: $c-blue;
+        @extend %Syncopate400Bold;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 47px;
+    color: $c-white;
+    font-size: 32px;
+    line-height: 33px;
+    @extend %Syncopate700;
+
+    @include onTablet {
+      font-size: 24px;
+      line-height: 25px;
+    }
+
+   @include onLaptop {
+    font-size: 36px;
+    line-height: 37px;
+   }
+  }
+
+  &__social {
+    &-block {
+      margin-top: 60px;
+
+      @include onTablet {
+        margin-top: 24px;
+      }
+
+      @include onLaptop{
+        margin-top: 62px;
+      }
+
+      @include onLaptopL {
+        margin-top: 76px;
+      }
+    }
+  }
+
+  &__socialMedia {
+    background-color: $c-white;
+    margin-top: 16px;
+    height: 48px;
+
+    @include onTablet {
+      margin-top: 0;
+      display: inline-block;
+      width: 196px;
+      margin-right: 24px;
+    }
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    &-link {
+      display: flex;
+      height: 100%;
+      color: $c-black;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      gap: 10px;
+    }
+
+    &-title {
+      font-size: 16px;
+      line-height: 22px;
+      @extend %Syncopate700;
+    }
+  }
+
+  &__list {
+    @include onLaptop {
+      display: flex;
+      gap: 45px;
+    }
+  }
+
+  &__item-contacts {
+    margin-top: 24px;
+  }
+
+  &__item-info {
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  &__contacts-info {
+    text-decoration: none;
+    @extend %Syncopate400Bold;
+    color: $c-white;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    transition: text-shadow 0.1s;
+
+    @include onTablet {
+      font-size: 18px;
+      line-height: 19px;
+    }
+
+    @include onDesktop {
+      font-size: 16px;
+      line-height: 17px;
+    }
+
+    &:hover {
+      text-shadow: -3px 2px 1px $c-blue;
+    }
+  }
+
+  &__item {
+    margin-bottom: 32px;
+
+    @include onLaptop {
+      margin-bottom: 40px;
+    }
+
+    &-info {
+      @extend %Syncopate400;
+      color: $c-gray;
+      font-size: 12px;
+      line-height: 12px;
+    }
+
+    &-contacts {
+      margin-bottom: 23px;
+
+      @include onDesktop {
+        margin-top: 73px;
+      }
+    }
+  }
+
+  &__contact-block {
+    @include onLaptop {
+      margin-bottom: 40px;
+    }
+
+    @include onDesktop {
+      position: relative;
+      bottom: 240px;
+    }
+  }
+}

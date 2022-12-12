@@ -1,7 +1,20 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import './utils/reset';
+@import './utils/mixins';
+@import './utils/vars';
+@import './utils/extends';
+@import './utils/fonts';
 
-body {
-  background: $c-gray;
-}
+@import './blocks/container/container.scss';
+@import './blocks/grid/grid.scss';
+@import './blocks/header/header.scss';
+@import './blocks/page/page.scss';
+@import './blocks/menu/menu.scss';
+@import './blocks/main/main.scss';
+@import './blocks/about/about.scss';
+@import './blocks/slider/slider.scss';
+@import './blocks/news/news.scss';
+@import './blocks/subscribe/subscribe.scss';
+@import './blocks/footer/footer.scss';
+@import './blocks/toggler/toggler.scss';
+@import './blocks/dark/dark.scss';
+

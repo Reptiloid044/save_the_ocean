@@ -1,0 +1,127 @@
+.header {
+
+  background-color: var(--var-body-bg);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    height: 99px;
+    align-items: center;
+    position: relative;
+
+    @include onTablet {
+      display: grid;
+      height: 127px;
+    }
+  }
+
+  &__logo-content {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $c-black;
+    font-size: 20px;
+    line-height: 21px;
+    @extend %Syncopate400;
+
+    @include onTablet {
+      font-size: 36px;
+      line-height: 37px;
+    }
+
+    &--blue {
+      color: $c-blue;
+      @extend %Syncopate400Bold;
+    }
+  }
+
+  &__info {
+    display: none;
+
+    @include onLaptop {
+      display: block;
+      justify-self: center;
+    }
+  }
+
+  &__phone {
+    text-decoration: none;
+    color: $c-black;
+    @extend %Syncopate400;
+    display: block;
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  &__schedule {
+    @extend %Syncopate400;
+    color: $c-gray;
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  &__toggle {
+    display: none;
+
+    @include onTablet {
+      display: block;
+      background-image: url(../images/icon/Rectangle362.svg);
+      background-size: cover;
+      position: relative;
+      width: 48px;
+      height: 32px;
+      transition: 0.3s;
+      justify-self: end;
+    }
+
+    &-button {
+      background-image: url(../images/icon/togglerLight.svg);
+      background-size: cover;
+      position: absolute;
+      width: 35px;
+      height: 37px;
+      left: -5px;
+      cursor: pointer;
+      transition: background-image 0.3s, left 0.3s;
+    }
+  }
+
+  &__menu {
+    background-image: url(../images/icon/menu.svg);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+
+    @include onTablet {
+      width: 48px;
+      height: 48px;
+      justify-self: end;
+    }
+
+    &-btn {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+  &__menu-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__line {
+    position: absolute;
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: $c-black;
+    bottom: 10px;
+  }
+}
+
+.filter {
+  filter:blur(5px);
+}
+

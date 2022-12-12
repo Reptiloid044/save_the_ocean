@@ -1,4 +1,25 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
+%Syncopate400 {
+  font-family: 'Syncopate';
+  font-style: normal;
   font-weight: 400;
+}
+
+%Syncopate400Bold {
+  font-family: 'Syncopate';
+  font-style: normal;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+%Syncopate700 {
+  font-family: 'Syncopate';
+  font-style: normal;
+  font-weight: 700;
+}
+
+%Syncopate700Bold {
+  font-family: 'Syncopate';
+  font-style: normal;
+  font-weight: 700;
+  font-weight: bold;
 }

@@ -1,0 +1,152 @@
+.menu {
+  z-index: 1000;
+  background-color: white;
+  position: fixed;
+
+  &__content {
+    height: 100vh;
+    margin-top: 46px;
+  }
+
+  &__close {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 19px;
+    margin-right: 10px;
+
+    @include onTablet {
+      margin-right: 20px;
+    }
+
+    &-btn {
+      background-image: url(../images/icon/close.svg);
+      background-size: cover;
+      width: 16px;
+      height: 16px;
+      transition: filter 0.3s;
+
+      @include onLaptopL {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &-link {
+      margin-top: 38px;
+      margin-right: 12px;
+
+      @include onTablet {
+        margin-top: 50px;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    @extend %Syncopate400Bold;
+    color: $c-black;
+    font-size: 20px;
+    line-height: 21px;
+    text-transform: uppercase;
+    transition: text-shadow 0.1s;
+
+
+    @include onTablet {
+      font-size: 32px;
+      line-height: 33px;
+    }
+
+    @include onLaptopL {
+      font-size: 36px;
+      line-height: 37px;
+    }
+
+    &:hover {
+      text-shadow: -3px 2px 1px $c-blue;
+    }
+  }
+
+  &__item {
+    margin-bottom: 32px;
+
+    @include onLaptop {
+      margin-bottom: 40px;
+    }
+
+    &-info {
+      @extend %Syncopate400;
+      color: $c-gray;
+      font-size: 12px;
+      line-height: 12px;
+    }
+
+    &-contacts {
+      margin-bottom: 23px;
+    }
+  }
+
+  &__contacts {
+    margin-top: 110px;
+
+    &-title {
+      text-decoration: none;
+      @extend %Syncopate400Bold;
+      color: $c-black;
+      font-size: 20px;
+      line-height: 21px;
+      text-transform: uppercase;
+      margin-bottom: 26px;
+
+      @include onTablet {
+        font-size: 32px;
+        line-height: 33px;
+      }
+
+      @include onLaptopL {
+        font-size: 36px;
+        line-height: 37px;
+      }
+    }
+  }
+
+  &__contacts-info {
+    text-decoration: none;
+    @extend %Syncopate400Bold;
+    color: $c-black;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    transition: text-shadow 0.1s;
+
+    @include onTablet {
+      font-size: 18px;
+      line-height: 19px;
+    }
+
+    &:hover {
+      text-shadow: -3px 2px 1px $c-blue;
+    }
+  }
+
+  &__socialMedia {
+    display: flex;
+    justify-content: start;
+    gap: 32px;
+
+    &-icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__toggle {
+    top: 80px;
+    display: block;
+    position: relative;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+}

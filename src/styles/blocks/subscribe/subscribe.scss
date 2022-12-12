@@ -1,0 +1,103 @@
+.subscribe {
+  margin-top: 56px;
+
+  &__title {
+    font-size: 24px;
+    line-height: 25px;
+    @extend %Syncopate700;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include onLaptop {
+      font-size: 32px;
+      line-height: 33px;
+    }
+
+    @include onLaptopL {
+      font-size: 36px;
+      line-height: 37px;
+    }
+  }
+
+  &__input {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 48px;
+    font-family: $KyivType;
+    color: $c-black;
+    border: 1px solid $c-gray;
+    padding-left: 24px;
+    font-size: 16px;
+    cursor: pointer;
+
+    @include onTablet {
+      width: 70%;
+    }
+
+    @include onLaptop {
+      width: 60%;
+      margin-bottom: 44px;
+    }
+
+    @include onLaptopL {
+      width: 70%;
+    }
+
+
+    &::placeholder {
+      font-size: 16px;
+      font-family: $KyivType;
+      color: $c-black;
+    }
+  }
+
+  &__form {
+    text-align: center;
+  }
+
+  &__button {
+    width: 100%;
+    height: 48px;
+    background-color: $c-black;
+    color: white;
+    @extend %Syncopate400Bold;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    @include onTablet {
+      position: relative;
+      width: 25%;
+      right: 6px;
+      bottom: 2px;
+    }
+
+    @include onTablet {
+      width: 25%;
+      right: 6px;
+      bottom: 2.5px;
+    }
+
+    &:hover {
+      background-color: $c-blue;
+    }
+  }
+
+  &__line {
+    height: 1px;
+    width: 100%;
+    background-color: $c-black;
+    margin-top: 56px;
+
+    @include onTablet {
+      margin-top: 26px;
+    }
+
+    @include onLaptop {
+      margin-top: 0;
+    }
+  }
+}
+

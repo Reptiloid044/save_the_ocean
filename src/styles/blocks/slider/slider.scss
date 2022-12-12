@@ -1,0 +1,118 @@
+.slider-container {
+  position: relative;
+}
+
+.slider {
+  z-index: -1;
+
+  &__item {
+    box-sizing: border-box;
+    padding-bottom: 20%;
+    background-size: cover !important;
+
+    @include onLaptop {
+      padding-bottom: 23%;
+    }
+
+    @include onLaptopL {
+      padding-bottom: 17%;
+    }
+
+    @include onDesktop {
+      padding-bottom: 18%;
+    }
+  }
+
+  &__first {
+    background: url(../images/image/unsplash_4CaVbHUXf5o.svg) no-repeat center;
+  }
+
+  &__second {
+    background: url(../images/image/unsplash_i5FsBOLsB50.svg) no-repeat center;
+  }
+
+  &__third {
+    background: url(../images/image/unsplash_Ubwb-m2eKAo.svg) no-repeat center;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 2px;
+    width: 120px;
+    height: 40px;
+    left: 17px;
+
+    @include onTablet {
+      bottom: 10px;
+      width: 160px;
+      left: 40px;
+    }
+
+    @include onLaptopL {
+      width: 204px;
+      bottom: 26px;
+    }
+  }
+
+  &__button {
+    width: 31px;
+    height: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    @include onTablet {
+      width: 32px;
+      height: 27px;
+    }
+
+    @include onLaptop {
+      width: 47px;
+      height: 41px;
+    }
+  }
+
+  &__next-button {
+    background-image: url(../images/icon/nextLight.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.2s;
+
+    &:hover {
+      background-image: url(../images/icon/nextFull.svg);
+    }
+  }
+
+  &__prev-button {
+    background-image: url(../images/icon/prevLight.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.2s;
+
+    &:hover {
+      background-image: url(../images/icon/prevFull.png);
+    }
+  }
+
+
+
+  &__counter {
+    @extend %Syncopate400Bold;
+    color: $c-white;
+    font-size: 18px;
+
+    @include onTablet {
+      font-size: 24px;
+    }
+
+    @include onLaptopL {
+      font-size: 36px;
+    }
+  }
+}

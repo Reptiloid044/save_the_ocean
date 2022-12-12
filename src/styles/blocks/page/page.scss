@@ -1,0 +1,43 @@
+.page {
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+  }
+
+  &__menu {
+    background-color: white;
+    position: fixed;
+    left: 72px;
+    top: 0;
+    right: 0;
+    transform: translateX(+100%);
+    transition: transform 0.3s;
+
+    &:target {
+      transform: translateX(0);
+    }
+
+    @include onTablet {
+      left: 40%;
+    }
+
+    @include onLaptop {
+      left: 60%;
+    }
+
+    @include onLaptopL {
+      left: 60%;
+    }
+
+    @include onDesktop {
+      left: 65%;
+    }
+  }
+}
+
+.filter {
+  filter:blur(5px);
+}

@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+  padding: 0 23px;
+  max-width: 1920px;
+
+  @include onTablet {
+    padding: 0 23px;
+  }
+
+  @include onLaptopL {
+    padding: 0 71px;
+  }
+}
