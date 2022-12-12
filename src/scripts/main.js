@@ -2,7 +2,7 @@
 
 const openMenu = document.getElementById('open-menu');
 const closeMenu = document.getElementById('close-menu');
-const header = document.getElementById('header');
+const header = document.querySelector('header');
 const main = document.querySelector('main');
 const footer = document.querySelector('.footer');
 
@@ -145,11 +145,11 @@ $(function() {
     } else {
       document.removeAttribute('dark');
     }
-    console.log('Кнопка переключена в состояние on');
+    console.log('on');
   });
 
   $('.switch-btn').on('off.switch', function() {
-    console.log('Кнопка переключена в состояние off');
+    console.log('off');
   });
 
   $('.switch-btn').each(function() {

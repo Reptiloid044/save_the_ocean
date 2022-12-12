@@ -1,5 +1,5 @@
 .menu {
-  z-index: 1000;
+  z-index: 2;
   background-color: white;
   position: fixed;
 
@@ -68,10 +68,10 @@
   }
 
   &__item {
-    margin-bottom: 32px;
+    margin-bottom: 26px;
 
     @include onLaptop {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     &-info {
@@ -82,12 +82,17 @@
     }
 
     &-contacts {
-      margin-bottom: 23px;
+      margin-bottom: 16px;
     }
   }
 
   &__contacts {
-    margin-top: 110px;
+    margin-top: 80px;
+
+    &-block {
+      position: fixed;
+      bottom: 56px;
+    }
 
     &-title {
       text-decoration: none;
@@ -141,7 +146,7 @@
   }
 
   &__toggle {
-    top: 80px;
+    top: 50px;
     display: block;
     position: relative;
 
