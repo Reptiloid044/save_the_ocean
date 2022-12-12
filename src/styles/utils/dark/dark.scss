@@ -1,5 +1,4 @@
-@media (prefers-color-scheme: dark) {
-  :root {
+  :root.dark {
     --bg-color: black;
     --color: white;
     --bg-imageMenu: url(../images/icon/menuDark.svg);
@@ -8,4 +7,3 @@
     --bg-imageAbout: url(../images/icon/ABOUTTHEDark.svg);
     --bg-imageProject: url(../images/icon/PROJECTDark.svg);
   }
-}

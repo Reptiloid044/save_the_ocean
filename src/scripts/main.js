@@ -151,11 +151,14 @@ $(function() {
 
   $('.switch-btn').on('on.switch', function() {
     document.documentElement.classList.add('dark');
+    document.documentElement.classList.remove('light');
+
     console.log('btn on');
   });
 
   $('.switch-btn').on('off.switch', function() {
     document.documentElement.classList.add('light');
+    document.documentElement.classList.remove('dark');
     console.log('btn off');
   });
 
@@ -163,3 +166,18 @@ $(function() {
     $(this).triggerHandler('click', false);
   });
 });
+
+// const getPreferredColorScheme = () => {
+//   const darkQuery = "(prefers-color-scheme: dark)";
+//   const darkMQL = window.matchMedia ? window.matchMedia(darkQuery) : {};
+//   if (darkMQL.media === darkQuery && darkMQL.matches) {
+//    return "dark";
+//   }
+//   return "light";
+// };
+// document.documentElement.setAttribute("data-color-scheme", getPreferredColorScheme());
+
+// document.getElementById("button").onclick = () => {
+//   const colorScheme = document.documentElement.getAttribute("data-color-scheme");
+//  document.documentElement.setAttribute("data-color-scheme", colorScheme === "light" ? "dark" : "light");
+// };

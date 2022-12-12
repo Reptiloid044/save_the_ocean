@@ -1,6 +1,6 @@
 Save the Ocean Landing:
 
-This project was implemented in five sizes: mobile version (375px), tablet version (768px) laptop version (1024px), laptop L version(1366px), and desktop version(1920px).
+This project was implemented in five sizes: mobile version (375px), tablet version (768px) laptop version (1024px), laptop L version (1366px), and desktop version (1920px).
 
 - [FIGMA](https://www.figma.com/file/PQZPy117Zlowfrs0AnvhVs/Test?node-id=1%3A91&t=XMlgCZUAdCBWsjGm-0)
 
